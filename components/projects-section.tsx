@@ -25,6 +25,14 @@ const projects: Project[] = [
     github: "https://github.com/ChunchuManoj/portfolio"
   },
   {
+    title: "Personal Portfolio",
+    description:
+      "A personal portfolio that showcase my skills, projects, intrests and can help you connect with me.",
+    image: "/portfolio_old.png",
+    technologies: ["HTML","CSS","JS"],
+    github: "https://github.com/ChunchuManoj/Portfolio_old"
+  },
+  {
     title: "Teacher Track Smart Board",
     description:
       "A gesture-based smart board system enabling touch-free control for writing, drawing, and erasing tasks, integrated with secure teacher identification using wearables. Achieved 95% accuracy in gesture recognition, enhancing classroom interactivity.",
