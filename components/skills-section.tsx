@@ -213,7 +213,7 @@ export default function SkillsSection() {
 
         // Draw text
         ctx.fillStyle = "#ffffff"
-        ctx.font = `${this.highlighted ? "bold " : ""}${Math.max(12, this.radius / 2)}px sans-serif`
+        ctx.font = `${this.highlighted ? "bold " : ""}${Math.max(10, this.radius / 3)}px sans-serif`
         ctx.textAlign = "center"
         ctx.textBaseline = "middle"
         ctx.fillText(this.skill.name, this.x, this.y)
