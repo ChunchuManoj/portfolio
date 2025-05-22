@@ -168,13 +168,17 @@ const skillsData = [
 
 // Color mapping for different skill categories with cyberpunk theme
 const categoryColors = {
-  Programming: new THREE.Color("#00ffff"), // Cyber blue
-  Web: new THREE.Color("#ff00ff"), // Neon purple
-  Data: new THREE.Color("#ffff00"), // Neon yellow
-  AI: new THREE.Color("#00ff88"), // Cyber green
-  Tools: new THREE.Color("#ff3366"), // Neon pink
-  CS: new THREE.Color("#00ccff"), // Electric blue
+  Programming: new THREE.Color("#00ffff"),
+  Web: new THREE.Color("#ff00ff"),
+  "Web Development": new THREE.Color("#ff00ff"),
+  Database: new THREE.Color("#ffff00"),
+  Cloud: new THREE.Color("#00ff88"),
+  Tools: new THREE.Color("#ff3366"),
+  "Computer Science": new THREE.Color("#00ccff"),
+  "Data Science": new THREE.Color("#66ffcc"),
+  AI: new THREE.Color("#ff6600")
 };
+
 
 // Skill Node component
 function SkillNode({ skill, hovered, setHovered }) {
@@ -226,7 +230,7 @@ function SkillNode({ skill, hovered, setHovered }) {
     >
       {/* Main skill sphere */}
       <mesh>
-        <sphereGeometry args={[1, 32, 32]} />
+        <sphereGeometry args={[0.6, 24, 24]} />
         <meshStandardMaterial
           color={color}
           emissive={color}
@@ -238,7 +242,7 @@ function SkillNode({ skill, hovered, setHovered }) {
 
       {/* Outer glow */}
       <mesh ref={glowRef}>
-        <sphereGeometry args={[1.2, 32, 32]} />
+        <sphereGeometry args={[0.75, 24, 24]} />
         <meshStandardMaterial
           color={color}
           transparent={true}
@@ -251,7 +255,7 @@ function SkillNode({ skill, hovered, setHovered }) {
       {/* Skill name */}
       <Html position={[0, 1.5, 0]} center distanceFactor={10}>
         <motion.div
-          className={`px-3 py-1 rounded-full text-white text-sm font-medium transition-all duration-300 ${
+          className={`px-3 py-1 rounded-full text-white text-xs font-medium transition-all duration-300 ${
             isHovered || clicked
               ? "bg-gradient-to-r from-cyan-500 to-blue-500 scale-110"
               : "bg-gray-800/80"
@@ -415,7 +419,7 @@ function CameraController() {
   const { camera } = useThree();
 
   useEffect(() => {
-    camera.position.set(0, 0, 20);
+    camera.position.set(0, 0, 25);
   }, [camera]);
 
   return (
