@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 // Fix the 3D skills visualization and optimize performance
 
 // Reduce the number of skill nodes for better performance
-const skillsData = const skillsData = [
+const skillsData = [
   // Programming Languages
   {
     name: "Java",
