@@ -63,6 +63,41 @@ const skills: Skill[] = [
     color: "#f7df1e",
   },
   {
+    "name": "React.js",
+    "category": "Web Development",
+    "level": 85,
+    "description": "Skilled in building responsive front-end applications using React.js and component-based architecture.",
+    "color": "#00bcd4"
+  },
+  {
+    "name": "Node.js",
+    "category": "Web Development",
+    "level": 80,
+    "description": "Backend development using Node.js with Express.js for creating REST APIs and server-side logic.",
+    "color": "#009688"
+  },
+  {
+    "name": "Google Cloud Platform (GCP)",
+    "category": "Cloud Computing",
+    "level": 70,
+    "description": "Deployed scalable web applications using GCP services and tools.",
+    "color": "#ff9800"
+  },
+  {
+    "name": "REST APIs",
+    "category": "Web Development",
+    "level": 80,
+    "description": "Designed and integrated RESTful APIs for communication between frontend and backend.",
+    "color": "#795548"
+  },
+  {
+  "name": "Express.js",
+  "category": "Web Development",
+  "level": 80,
+  "description": "Experienced in building backend services and RESTful APIs using Express.js with Node.js.",
+  "color": "#5d4037"
+},
+  {
     name: "Git",
     category: "Tools",
     level: 75,
