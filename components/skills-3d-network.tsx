@@ -419,7 +419,7 @@ function CameraController() {
   const { camera } = useThree();
 
   useEffect(() => {
-    camera.position.set(0, 0, 25);
+    camera.position.set(0, 0, 12);
   }, [camera]);
 
   return (
