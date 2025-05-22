@@ -17,6 +17,22 @@ type Project = {
 
 const projects: Project[] = [
   {
+  "title": "AI-Based Gift Recommendation Platform",
+  "description": "An AI-powered web platform that provides personalized gift recommendations based on user preferences, occasions, and detailed survey data. Features include tailored suggestions using Google Gemini AI, user authentication, an admin dashboard, saved/favorite gifts, and a responsive, modern UI for seamless gift discovery.",
+  "image": "/gift-recommendation-platform.png",
+  "technologies": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "MongoDB",
+    "NextAuth.js",
+    "Google Gemini API"
+  ],
+  "github": "https://github.com/ChunchuManoj/AI-Based-Gift-recommendation"
+},
+  {
     title: "AI Powered Portfolio",
     description:
       "This portfolio website is designed to highlight the professional journey of Chunchu Manoj. It includes sections for skills, projects, certifications, experience, and contact information.",
