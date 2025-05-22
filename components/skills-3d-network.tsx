@@ -9,92 +9,162 @@ import { motion } from "framer-motion";
 // Fix the 3D skills visualization and optimize performance
 
 // Reduce the number of skill nodes for better performance
-const skillsData = [
+const skillsData = const skillsData = [
   // Programming Languages
   {
     name: "Java",
     category: "Programming",
     proficiency: 0.9,
     position: [0, 0, 0],
-    related: ["DSA", "OOP"],
+    related: ["DSA", "OOP"]
   },
   {
     name: "Python",
     category: "Programming",
     proficiency: 0.85,
     position: [2, 1, 1],
-    related: ["AI", "Data Analysis"],
+    related: ["AI", "Data Analysis"]
   },
   {
     name: "C",
     category: "Programming",
     proficiency: 0.75,
     position: [-2, -1, 1],
-    related: ["DSA"],
+    related: ["DSA"]
   },
 
-  // Web Technologies
+  // Databases
   {
-    name: "HTML",
-    category: "Web",
+    name: "SQL",
+    category: "Database",
     proficiency: 0.8,
-    position: [3, -2, -1],
-    related: ["CSS", "JavaScript"],
+    position: [1, 3, 0],
+    related: ["Backend", "Relational DB"]
   },
   {
-    name: "CSS",
+    name: "MongoDB",
+    category: "Database",
+    proficiency: 0.7,
+    position: [-3, 2, -1],
+    related: ["NoSQL", "Backend"]
+  },
+
+  // Web Development
+  {
+    name: "HTML/CSS",
     category: "Web",
-    proficiency: 0.8,
-    position: [4, -1, -2],
-    related: ["HTML"],
+    proficiency: 0.85,
+    position: [3, -1, 0],
+    related: ["Bootstrap", "Responsive Design"]
   },
   {
     name: "JavaScript",
     category: "Web",
-    proficiency: 0.75,
-    position: [5, 0, -1],
-    related: ["HTML", "CSS"],
-  },
-
-  // Data & AI
-  {
-    name: "SQL",
-    category: "Data",
-    proficiency: 0.85,
-    position: [-3, 2, -2],
-    related: ["Data Analysis"],
-  },
-  {
-    name: "AI",
-    category: "AI",
     proficiency: 0.8,
-    position: [1, 3, -2],
-    related: ["Python", "Data Analysis"],
+    position: [-1, 2, 2],
+    related: ["React.js", "jQuery", "EJS"]
   },
   {
-    name: "Data Analysis",
-    category: "Data",
+    name: "React.js",
+    category: "Web Development",
     proficiency: 0.85,
-    position: [-1, 4, -1],
-    related: ["Python", "AI", "SQL"],
+    position: [2, -2, 1],
+    related: ["JavaScript", "UI/UX"]
+  },
+  {
+    name: "Node.js",
+    category: "Web Development",
+    proficiency: 0.8,
+    position: [-2, -2, 0],
+    related: ["Express.js", "Backend"]
+  },
+  {
+    name: "Express.js",
+    category: "Web Development",
+    proficiency: 0.8,
+    position: [1, -3, 2],
+    related: ["Node.js", "REST APIs"]
+  },
+  {
+    name: "REST APIs",
+    category: "Web Development",
+    proficiency: 0.8,
+    position: [0, 3, -1],
+    related: ["Express.js", "Backend"]
+  },
+  {
+    name: "Bootstrap",
+    category: "Web",
+    proficiency: 0.75,
+    position: [2, 0, -2],
+    related: ["HTML/CSS", "UI/UX"]
+  },
+  {
+    name: "EJS",
+    category: "Web",
+    proficiency: 0.7,
+    position: [-1, -2, -1],
+    related: ["Node.js", "Templating"]
+  },
+  {
+    name: "jQuery",
+    category: "Web",
+    proficiency: 0.7,
+    position: [-3, -1, 2],
+    related: ["JavaScript", "DOM Manipulation"]
   },
 
-  // Core CS
+  // Cloud & Tools
   {
-    name: "DSA",
-    category: "CS",
+    name: "Google Cloud Platform (GCP)",
+    category: "Cloud",
+    proficiency: 0.7,
+    position: [3, 2, 1],
+    related: ["Deployment", "Web Apps"]
+  },
+  {
+    name: "Git",
+    category: "Tools",
+    proficiency: 0.75,
+    position: [0, -3, -2],
+    related: ["CI/CD", "Collaboration"]
+  },
+
+  // Computer Science Core
+  {
+    name: "Data Structures",
+    category: "Computer Science",
     proficiency: 0.85,
-    position: [3, 3, 2],
-    related: ["Java", "Python", "C"],
+    position: [-1, 1, -2],
+    related: ["Algorithms", "Programming"]
   },
   {
-    name: "OOP",
-    category: "CS",
-    proficiency: 0.9,
-    position: [-4, 2, 3],
-    related: ["Java"],
+    name: "Algorithms",
+    category: "Computer Science",
+    proficiency: 0.8,
+    position: [1, -1, -2],
+    related: ["Data Structures", "Problem Solving"]
   },
+
+  // Data Science
+  {
+    name: "NumPy/Pandas",
+    category: "Data Science",
+    proficiency: 0.75,
+    position: [-2, 3, 1],
+    related: ["Python", "Data Analysis"]
+  },
+
+  // AI
+  {
+    name: "Machine Learning",
+    category: "AI",
+    proficiency: 0.7,
+    position: [2, 2, -2],
+    related: ["Python", "Data Science"]
+  }
 ];
+
 
 // Color mapping for different skill categories with cyberpunk theme
 const categoryColors = {
