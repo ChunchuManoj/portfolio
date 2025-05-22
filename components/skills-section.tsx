@@ -164,7 +164,7 @@ export default function SkillsSection() {
 
       constructor(skill: Skill) {
         this.skill = skill
-        this.radius = 30 + skill.level / 10
+        this.radius = 20 + skill.level / 15
         this.x = Math.random() * (canvas.width - this.radius * 2) + this.radius
         this.y = Math.random() * (canvas.height - this.radius * 2) + this.radius
         this.targetX = this.x
