@@ -92,36 +92,7 @@ const skillsData = [
     position: [0, 3, -1],
     related: ["Express.js", "Backend"]
   },
-  {
-    name: "Bootstrap",
-    category: "Web",
-    proficiency: 0.75,
-    position: [2, 0, -2],
-    related: ["HTML/CSS", "UI/UX"]
-  },
-  {
-    name: "EJS",
-    category: "Web",
-    proficiency: 0.7,
-    position: [-1, -2, -1],
-    related: ["Node.js", "Templating"]
-  },
-  {
-    name: "jQuery",
-    category: "Web",
-    proficiency: 0.7,
-    position: [-3, -1, 2],
-    related: ["JavaScript", "DOM Manipulation"]
-  },
-
   // Cloud & Tools
-  {
-    name: "Google Cloud Platform (GCP)",
-    category: "Cloud",
-    proficiency: 0.7,
-    position: [3, 2, 1],
-    related: ["Deployment", "Web Apps"]
-  },
   {
     name: "Git",
     category: "Tools",
@@ -132,28 +103,13 @@ const skillsData = [
 
   // Computer Science Core
   {
-    name: "Data Structures",
+    name: "DSA",
     category: "Computer Science",
     proficiency: 0.85,
     position: [-1, 1, -2],
     related: ["Algorithms", "Programming"]
   },
-  {
-    name: "Algorithms",
-    category: "Computer Science",
-    proficiency: 0.8,
-    position: [1, -1, -2],
-    related: ["Data Structures", "Problem Solving"]
-  },
-
   // Data Science
-  {
-    name: "NumPy/Pandas",
-    category: "Data Science",
-    proficiency: 0.75,
-    position: [-2, 3, 1],
-    related: ["Python", "Data Analysis"]
-  },
 
   // AI
   {
