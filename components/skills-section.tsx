@@ -42,13 +42,6 @@ const skills: Skill[] = [
     color: "#00758f",
   },
   {
-    name: "MongoDB",
-    category: "Database",
-    level: 70,
-    description: "Experience with NoSQL databases, document modeling, and integration with web applications.",
-    color: "#4db33d",
-  },
-  {
     name: "HTML/CSS",
     category: "Web",
     level: 85,
@@ -75,13 +68,6 @@ const skills: Skill[] = [
     "level": 80,
     "description": "Backend development using Node.js with Express.js for creating REST APIs and server-side logic.",
     "color": "#009688"
-  },
-  {
-    "name": "Google Cloud Platform (GCP)",
-    "category": "Cloud Computing",
-    "level": 70,
-    "description": "Deployed scalable web applications using GCP services and tools.",
-    "color": "#ff9800"
   },
   {
     "name": "REST APIs",
@@ -124,14 +110,7 @@ const skills: Skill[] = [
     level: 80,
     description: "Proficient in algorithm design, analysis, and optimization for various computational problems.",
     color: "#673ab7",
-  },
-  {
-    name: "NumPy/Pandas",
-    category: "Data Science",
-    level: 75,
-    description: "Experience with data manipulation, analysis, and visualization using Python libraries.",
-    color: "#150458",
-  },
+  }
 ]
 
 export default function SkillsSection() {
