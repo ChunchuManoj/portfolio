@@ -160,7 +160,7 @@ export default function HeroSection() {
 
           <motion.div variants={itemVariants} className="mb-8">
             <h2 className="text-lg sm:text-xl md:text-2xl text-foreground dark:text-foreground/80 light:text-foreground/90">
-              Software Developer | AI Enthusiast | Data Analyst
+              Software Developer | AI Enthusiast | Back End Developer
             </h2>
           </motion.div>
 

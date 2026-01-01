@@ -17,31 +17,22 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
-    title: "Web Development Intern",
-    company: "CodSoft",
-    period: "Jun 2024 - Jul 2024",
+    title: "Software Development Engineer 1",
+    company: "HighRadius",
+    period: "Sep 2025 - Present",
     description:
-      "Developed responsive, high-performance websites using HTML, CSS, and JavaScript, enhancing user experience and reducing page load times.",
+      "Working on different features for finance O2C",
     type: "internship",
-    skills: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    skills: ["Java", "Spring Boot", "Struts", "Hibernate"],
   },
   {
-    title: "Artificial Intelligence Intern",
-    company: "IBM Skills Build",
-    period: "Aug 2023 - Oct 2023",
+    title: "Intern",
+    company: "NextEducation India Pvt Ltd.",
+    period: "JUl 2025 - Oct 2025",
     description:
-      "Built and deployed AI-driven solutions for data analysis, delivering actionable business insights. Collaborated with developers and data scientists to deliver accurate predictions, enhancing the reliability of AI models.",
+      "Get Trained on Java, Spring Boot, and build entireprice applications",
     type: "internship",
-    skills: ["AI", "Data Analysis", "Machine Learning", "Collaboration"],
-  },
-  {
-    title: "Artificial Intelligence Intern",
-    company: "Math Works",
-    period: "May 2023 - Sep 2023",
-    description:
-      "Applied advanced machine learning algorithms to solve real-world AI challenges, improving model efficiency.",
-    type: "internship",
-    skills: ["Machine Learning", "Algorithm Design", "Problem Solving"],
+    skills: ["Java", "Algorithm Design", "Problem Solving"],
   },
   {
     title: "Subject Matter Expert",
