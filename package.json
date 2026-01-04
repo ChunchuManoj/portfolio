@@ -46,7 +46,6 @@
     "cmdk": "1.0.4",
     "date-fns": "3.6.0",
     "embla-carousel-react": "8.5.1",
-    "expo-file-system": "latest",
     "expo-gl": "latest",
     "framer-motion": "^12.4.10",
     "input-otp": "1.4.1",
